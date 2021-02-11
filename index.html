@@ -17,7 +17,7 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a lang="en" href="./index.html" class="logo"
@@ -66,101 +66,195 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!--Герой-->
-      <section class="hero hero-img">
-        <div class="hero-container">
+      <section class="hero-section hero-img">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
+    </main>
 
-      <!--Преимущества-->
-      <section class="features-section">
-        .
-        <div class="container features-container">
-          <h2 class="section-title visually-hidden">Преимущества</h2>
-          <ul class="feature-list list">
-            <li class="item antenna">
-              <h3 class="title">Внимание к деталям</h3>
-              <p class="text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="item clock">
-              <h3 class="title">Пунктуальность</h3>
-              <p class="text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="item diagram">
-              <h3 class="title">Планирование</h3>
-              <p class="text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="item astronaut">
-              <h3 class="title">Современные технологии</h3>
-              <p class="text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <section class="features-section">
+      <div class="container features-container">
+        <h2 class="section-title visually-hidden">Преимущества</h2>
+        <ul class="feature-list list">
+          <li class="item antenna">
+            <h3 class="title">Внимание к деталям</h3>
+            <p class="text">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="item clock">
+            <h3 class="title">Пунктуальность</h3>
+            <p class="text">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="item diagram">
+            <h3 class="title">Планирование</h3>
+            <p class="text">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="item astronaut">
+            <h3 class="title">Современные технологии</h3>
+            <p class="text">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-      <!--Чем мы занимаемся-->
-      <section class="works-section section">
-        <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="works-list list">
-            <li class="item">
-              <div class="work-list-thumb">
+    <section class="works-section section">
+      <div class="container">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="works-list list">
+          <li class="item">
+            <div class="work-list-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/desktop-applications/desktop-applications-01.jpg    1x,
+                    ./images/work/desktop-applications/desktop-applications-02@2x.jpg 2x
+                  "
+                  media="min-width: 1200px"
+                />
+                <source
+                  srcset="
+                    ./images/work/desktop-applications/desktop-applications-01.webp    1x,
+                    ./images/work/desktop-applications/desktop-applications-02@2x.webp 2x
+                  "
+                  media="min-width: 1200px"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work/desktop-applications/desktop-applications-01.jpg    1x,
+                    ./images/work/desktop-applications/desktop-applications-02@2x.jpg 2x
+                  "
+                  media="min-width: 768px"
+                />
+                <source
+                  srcset="
+                    ./images/work/desktop-applications/desktop-applications-01.webp    1x,
+                    ./images/work/desktop-applications/desktop-applications-02@2x.webp 2x
+                  "
+                  media="min-width: 768px"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work/desktop-applications/desktop-applications-01.jpg    1x,
+                    ./images/work/desktop-applications/desktop-applications-02@2x.jpg 2x
+                  "
+                  media="min-width: 480px"
+                />
+                <source
+                  srcset="
+                    ./images/work/desktop-applications/desktop-applications-01.webp    1x,
+                    ./images/work/desktop-applications/desktop-applications-02@2x.webp 2x
+                  "
+                  media="min-width: 480px"
+                  type="image/webp"
+                />
+
                 <img
-                  src="./images/works/work-tablet.jpg"
+                  src="./images/work/work-tablet.jpg"
                   alt="Человек работает за компьютером"
-                  height="294"
-                  width="370"
                 />
-                <p class="text">десктопные приложения</p>
-              </div>
-            </li>
-            <li class="item">
-              <div class="work-list-thumb">
-                <img
-                  src="./images/works/work-laptop.jpg"
-                  alt="Человек смотрит в телефон"
-                  height="294"
-                  width="370"
+              </picture>
+              <p class="text">десктопные приложения</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="work-list-thumb">
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/mobile-applications/mobile-applications-01.jpg    1x,
+                    ./images/work/mobile-applications/mobile-applications-02@2x.jpg 2x
+                  "
+                  media="min-width: 1200px"
                 />
-                <p class="text">мобильные приложения</p>
-              </div>
-            </li>
-            <li class="item">
-              <div class="work-list-thumb">
-                <img
-                  src="./images/works/work-comp.jpg"
-                  alt="Человек работает с планшетом"
-                  height="294"
-                  width="370"
+                <source
+                  srcset="
+                    ./images/work/mobile-applications/mobile-applications-01.webp 1x,
+                    ./images/work/mobile-applications/mobile-application-02@2x.webp 2x
+                  "
+                  media="min-width: 1200px"
+                  type="image/webp"
                 />
-                <p class="text">дизайнерские решения</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <!--Наша команда-->
-      <section class="section team">
+                <source
+                  srcset="
+                    ./images/work/mobile-applications/mobile-applications-01.jpg    1x,
+                    ./images/work/mobile-applications/mobile-applications-02@2x.jpg 2x
+                  "
+                  media="min-width: 768px"
+                />
+                <source
+                  srcset="
+                    ./images/work/mobile-applications/mobile-applications-01.webp    1x,
+                    ./images/work/mobile-applications/mobile-application-02@2x.webp 2x
+                  "
+                  media="min-width: 768px"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work/mobile-applications/mobile-applications-01.jpg    1x,
+                    ./images/work/mobile-applications/mobile-applications-02@2x.jpg 2x
+                  "
+                  media="min-width: 480px"
+                />
+                <source
+                  srcset="
+                    ./images/work/mobile-applications/mobile-applications-01.webp    1x,
+                    ./images/work/mobile-applications/mobile-applications-02@2x.webp 2x
+                  "
+                  media="min-width: 480px"
+                  type="image/webp"
+                />
+
+                <img
+                  src="./images/work/work-laptop.jpg"
+                  alt="Человек работает за компьютером"
+                />
+              </picture>
+              <p class="text">мобильные приложения</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="work-list-thumb">
+              <img
+                src="./images/works/work-comp.jpg"
+                alt="Человек работает с планшетом"
+                height="294"
+                width="370"
+              />
+              <p class="text">дизайнерские решения</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Наша команда-->
+    <!-- <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
@@ -354,10 +448,10 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- Постоянные клиенты-->
-    <section class="section clients">
+    <!-- <section class="section clients">
       <div class="container">
         <h2 class="section-title">Постоянные клиенты</h2>
 
@@ -411,10 +505,10 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!--Футер-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="contacts-box">
           <a href="" lang="en" class="logo"
@@ -495,9 +589,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>
           <svg class="modal-close-icon">
@@ -561,7 +655,7 @@
           <button type="submit" class="modal-submit-button">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>
