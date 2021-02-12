@@ -1,7 +1,14 @@
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
   & .address {
+    margin-bottom: 8px;
     color: var(--white-color);
     font-size: 14px;
     line-height: 1.7;
@@ -22,7 +29,6 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-decoration: none;
-    margin-top: 9px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -30,10 +36,9 @@
     &:focus {
       color: var(--accent-color);
     }
-  }
-
-  & .social-links-list {
-    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 
   & .social-link {
@@ -50,37 +55,58 @@
     fill: var(--white-color);
   }
 }
-
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.contacts-box {
-  width: 270px;
-
-  & > a {
-    margin-bottom: 30px;
-  }
-}
-
 .studio-dark-theme {
   color: var(--white-color);
 }
 
-.social-list-box {
-  width: 270px;
-}
-
 .call-to-action {
+  margin-top: 60px;
+  margin-bottom: 20px;
   color: var(--white-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .contacts-box {
+    width: 50%;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((50% - 45px) / 2);
+    }
+  }
+  .social-list-box {
+    width: 50%;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((50% - 45px) / 2);
+    }
+  }
+  .subscribe-box {
+    width: 100%;
+    margin-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(50% - 15px);
+      margin-top: 0;
+    }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
 }
