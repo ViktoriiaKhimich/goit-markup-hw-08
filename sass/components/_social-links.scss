@@ -1,6 +1,10 @@
 .social-links-list {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
 }
 
 .social-link {
