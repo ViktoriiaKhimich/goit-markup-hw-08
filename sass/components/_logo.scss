@@ -15,9 +15,21 @@
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 }
 
 .logo,
 .studio {
   display: inline-block;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .logo,
+  .footer .studio {
+    margin-bottom: 20px;
+  }
 }

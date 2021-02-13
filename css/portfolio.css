@@ -110,6 +110,10 @@
 }
 
 .thumb-text {
+  padding-top: 77px;
+  padding-bottom: 77px;
+  padding-left: 24px;
+  padding-right: 24px;
   position: absolute;
   display: flex;
   transform: translateY(101%);
@@ -132,8 +136,17 @@
   transform: translateY(0%);
 }
 
+@media screen and (min-width: 768px) {
+  .thumb-text {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .thumb-text {
+    padding-top: 63px;
+    padding-bottom: 63px;
     font-size: 18px;
     line-height: 1.55;
   }
