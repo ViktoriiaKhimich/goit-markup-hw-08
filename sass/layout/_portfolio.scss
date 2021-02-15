@@ -160,15 +160,22 @@
   padding-right: 24px;
 }
 
+.tech {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tech {
+    padding-top: 20px;
+    padding-bottom: 56px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .description .title {
   margin-bottom: 4px;
 }
-
-// @media screen (min-width: 768px) or (max-width: 1200px) {
-//   .tech {
-//     padding-top: 20px;
-//     padding-bottom: 56px;
-//     padding-left: 24px;
-//     padding-right: 24px;
-//   }
-// }
